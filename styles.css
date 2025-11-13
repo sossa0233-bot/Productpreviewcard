@@ -19,8 +19,9 @@ body{
   font-family:Montserrat,Fraunces ;
 }
 .picture{
-  width: 50%;
-  height: 500px;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   text-align: center;
   max-width: 600px; /* default for desktop */
   border-top-left-radius: 12px;
@@ -34,7 +35,7 @@ body{
 }
 .container{
   width: 705px;
-  height: 500px;
+  height: 550px;
   background-color: var(--white);
   display: flex;
   border: none;
@@ -105,6 +106,11 @@ p{
   font-size: 14px;
   margin-top: 1px;
 }
+/* Default style for desktop */
+.container {
+  font-size: 18px;
+}
+
 /* Default style for desktop */
 .container {
   font-size: 18px;
