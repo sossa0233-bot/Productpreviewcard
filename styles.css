@@ -9,15 +9,6 @@
   --cream: hsl(30, 38%, 92%);
   --white: hsl(0, 0%, 100%);
 }
-body{
-  background-color: var(--cream);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family:Montserrat,Fraunces ;
-}
 .picture{
   width: 100%;
   height: auto;
@@ -33,20 +24,63 @@ body{
     max-width: 300px; /* smaller image for mobile */
   }
 }
+body{
+  background-color: var(--cream);
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family:Montserrat,Fraunces ;
+}
 .container{
-  width: 705px;
-  height: 550px;
+  width: 800px;
+  height: 600px;
   background-color: var(--white);
   display: flex;
   border: none;
   border-radius: 12px;
+ 
 }
+
+@media (max-width: 600px) {
+    /* 1. Change the main container to stack items vertically */
+    body{
+      background-color: var(--cream);
+      min-height:100vh ;
+    }
+    .container{
+      
+      justify-content: center;
+      flex-direction: column;
+      width: 400px;
+      height: auto;
+      border-bottom-left-radius: 12px;
+    }
+    .picture{
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 12px;
+    }
+    .heading{
+     max-width:300px;
+      font-size: 1.3rem;
+      white-space: initial;
+      word-break: 12px;
+      font-weight:800px ;
+    }
+    .addtocart{
+      margin-bottom: 30px;
+      margin-right: 50px;
+    }
+    }
 
 .one{
  letter-spacing: 5px;
-  margin-left: 30px;
+  margin-left:-30px;
+  margin-top: 30px;
   font-size: 14px;
   color: var(--grey);
+  text-align: center;
 }
 .heading{
   font-family: Fraunces;
